@@ -12,13 +12,13 @@ public interface CandidatService {
 	//Create
 	
 	Candidat addCandidat(Candidat candidatToAdd);
-	
+	Collection<Candidat>addIntoCandidati(Candidat cadidatToAdd) throws Exception ;
 	// Update
 	Candidat updateCandidat(Candidat candidatToUpdate);
 	
 	// Delete
-	String removeCandidat(Candidat candidatToDelete );
-	
+	Collection<Candidat> removeCandidat(Candidat candidatToDelete );
+	String remove (Integer id) throws Exception;
 	// Read
 	Candidat getCandidatByCandidatID(Integer candidatID);
 	
